@@ -1,0 +1,27 @@
+{
+    "java.project.sourcePaths": [
+        "src\\db"
+    ],
+    "java.project.outputPath": "bin",
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar"
+    ],
+
+    "editor.fontFamily": "JetBrains Mono",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+    "breadcrumbs.enabled": false,
+
+    "workbench.colorTheme":"Monokai",
+    "workbench.statusBar.visible": false,
+    "editor.minimap.enabled": false,
+    "editor.renderLineHighlight":"all",
+    "editor.fontSize": 14,
+    "editor.lineHeight": 1.8,
+    "editor.rulers": [80, 120],
+
+    "workbench.iconTheme": "symbols",
+
+    "editor.fontLigatures": true,
+    "explorer.compactFolders":false
+}
