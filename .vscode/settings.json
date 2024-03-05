@@ -1,6 +1,8 @@
 {
     "java.project.sourcePaths": [
-        "src\\db"
+        "src\\db",
+        "src\\model\\entities",
+        "src\\application"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
