@@ -2,7 +2,8 @@
     "java.project.sourcePaths": [
         "src\\db",
         "src\\model\\entities",
-        "src\\application"
+        "src\\application",
+        "src\\modelDAO"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
