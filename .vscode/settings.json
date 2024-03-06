@@ -3,7 +3,8 @@
         "src\\db",
         "src\\model\\entities",
         "src\\application",
-        "src\\modelDAO"
+        "src\\modelDAO",
+        "src\\modelDAOimpl"
     ],
     "java.project.outputPath": "bin",
     "java.project.referencedLibraries": [
