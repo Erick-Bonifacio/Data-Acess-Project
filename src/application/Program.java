@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class Program {
@@ -19,5 +20,11 @@ public class Program {
         System.out.println("=== TEST 3: seller find all ===");
         sellerList = sellerDao.findAll();
         for (Seller obj : sellerList) System.out.println(obj);
+
+        System.out.println();
+        System.out.println("=== TEST 4: seller insert ===");
+        Seller newSeller = new Seller(null, "Greg", "greg@gmail.com", new Date(), 4000.00, new Department(2, null));
+        sellerDao.insert(newSeller);
+        System.out.println("Inserted! New id = " +newSeller.getId());
     }
 }
