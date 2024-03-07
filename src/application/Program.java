@@ -1,11 +1,13 @@
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Scanner;
 
 public class Program {
     public static void main(String[] args){
 
         SellerDao sellerDao = DaoFactory.createSellerDao();
+        Scanner sc = new Scanner(System.in);
 
         System.out.println("=== TEST 1: seller find by id ===");
         Seller seller = sellerDao.findById(3);
@@ -33,5 +35,13 @@ public class Program {
         seller.setName("Martha Waine");
         sellerDao.update(seller);
         System.out.println("Update completed!");
+
+        System.out.println();
+        System.out.println("=== TEST 6: seller delete ===");
+        System.out.println("Enter ID for delete test");
+        int id = sc.nextInt();
+        sellerDao.deleteById(id);
+        System.out.println("Delete completed");
+        sc.close();
     }
 }
