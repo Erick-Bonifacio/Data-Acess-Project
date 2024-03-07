@@ -4,6 +4,8 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.util.Properties;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 
 public class DB {
 
@@ -43,6 +45,22 @@ public class DB {
             return props;
         }
         catch(IOException e){
+            throw new DbException(e.getMessage());
+        }
+    }
+
+    public static void closeStatment(PreparedStatement ps){
+        try {
+            ps.close();
+        } catch (SQLException e) {
+            throw new DbException(e.getMessage());
+        }
+    }
+
+    public static void closeResultSet(ResultSet rs){
+        try {
+            rs.close();
+        } catch (SQLException e) {
             throw new DbException(e.getMessage());
         }
     }

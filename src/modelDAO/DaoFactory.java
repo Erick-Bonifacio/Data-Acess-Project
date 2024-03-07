@@ -1,6 +1,6 @@
 public class DaoFactory {
     
     public static SellerDao createSellerDao(){
-        return new SellerDaoJDBC(); //retorna a implementa;'ao a partir da interface'
+        return new SellerDaoJDBC(DB.getConnection()); //retorna a implementacao a partir da interface
     }
 }
